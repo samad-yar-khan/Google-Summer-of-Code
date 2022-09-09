@@ -79,9 +79,58 @@ https://user-images.githubusercontent.com/70485812/189439737-78e25abc-a78b-43da-
 
 The Event Subscriptions feature of the GitHub App allows users to subscribe to repository events such as - new pull request, new issues, new starts etc. Whenever a susbcribed repository event takes place, the GitHub App bot will send a message on the susbcribed room to describe the event.
 This feature uses [GitHub WebHooks](https://docs.github.com/en/developers/webhooks-and-events/webhooks/about-webhooks) and [regestering an API end point](https://developer.rocket.chat/apps-engine/sample-app-snippets/registering-api-endpoints) in the App.
+- The susbcription modal can be triggered using `/github subscribe` command and then we can subscribe to multiple events for a repository.
+- If multiple room subscribe to a repository, a single web hook is used and the different events are sent to different channels. This helps us avoid multiple requests to the server for the same event.
+- For any new events which are added or deleted, the same web hook is updated keeping in mind the events which are susbcribed by different rooms.
 
 
 https://user-images.githubusercontent.com/70485812/189442882-afc3950e-4581-4728-b8c3-0e77e40ee61f.mp4
+
+## GitHub Search & Share
+
+This feature was initially supposed to be an extension of the Slash Commands but we decided to make it a completely interactive experience. 
+- The GitHub Search feature allows users to search github for issues and pull request using different filters such as labels, authors, state, milestones etc.
+- Users can `Add` multiple search results and `Share` them on the channel along with a custom message.
+- This features improves the overall developer collaboration and helps share resources on the go.
+
+
+https://user-images.githubusercontent.com/70485812/189448516-e846c836-551f-438e-960a-7c956d6b624f.mp4
+
+## Opening New Issues
+
+The GitHub App allows users to open new issues from RocketChat. The `NewIssueModal` can be triggered by using `/github issue` and then entering the repository name in the launched modal.
+- This feature enables the users to fetch the issue templates for a repository from github, choose any of the given templates and open new issues with labels, assignees and rest of the properties. 
+- The most challenging part about this feature was to find a way to fetch the repository issue templates. 
+- GitHub does not yet have an API to fetch issue templates, but they can be extremely important to maintain uniformity and seperate different types of issues. To solve this problem, we used the [GitHub Repository Content API](https://docs.github.com/en/rest/repos/contents). 
+- The issue templates are stored under `./github/ISSUE_TEMPLATES` on any repository, so inorder to fetch the templates, we fetched all the files on that path, downloaded the code and prepoplated the `InputElement` with the selected template.
+- If the files did not exist, we simply skipped the Template-Selection Modal.
+
+https://user-images.githubusercontent.com/70485812/189451845-34437a50-1fc8-4360-8b64-d1beac7af277.mp4
+
+## Assigning Issues
+
+This features allows users to fetch repository issues and update the assignees on any issue. It also enables users to fetch and share multiple repository issues at a time. We can fetch and assign issues by using `/github issues` command and then entering the repository name.
+
+https://user-images.githubusercontent.com/70485812/189450860-5847e585-059c-4bed-a988-d21c99734969.mp4
+
+## Pull Request Reviews 
+
+This feature allows users to review and merge pull requests inside RocketChat.
+
+- Pull Request data can be viewed either by using the `/github search` method and finding the pull reuqest or if the pull request number is known, we can simply use the slash command `/github Username/RepositoryName pulls pullNumber`.
+- The pull request file changes, diffs, mergeaibility etc can also be seen. 
+- A user can also see all the existing comments on the pull request and add new comments to the pull request directly from Rocket.Chat.
+- While merging any pull request, the user can use any of the three methods - merge, rebase, squash.
+- The user can also add a commit title and commit message while merging the pull request.
+- Inorder to review the code changes, we intigrated a Code Editor component to fuselage and extended the component to be the ui-kit and made it re-usable for Rocket.Chat App developers by intigrating to the Rocket.Chat.Apps-engine. This was the most difficult feature and took a lot of research and effort to understand how  Rocket.Chat.App-engine, fuselage, ui-kit and Rocket.Chat interact with each other to render some new ui-block for different Rocket.Chat.Apps. 
+- The Documentation including all the details of the Code Editor Integration can be found in the [project wiki](https://github.com/RocketChat/Apps.Github22/wiki/Pull-Request-Reviews--:-Integrating-Code-Editor-with-Syntax-Highlighting).
+
+
+
+https://user-images.githubusercontent.com/70485812/189453201-a886b5b5-84d9-4621-9f8d-23311a980591.mp4
+
+
+
 
 
 
