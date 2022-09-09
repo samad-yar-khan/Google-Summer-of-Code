@@ -130,7 +130,26 @@ This feature allows users to review and merge pull requests inside RocketChat.
 https://user-images.githubusercontent.com/70485812/189453201-a886b5b5-84d9-4621-9f8d-23311a980591.mp4
 
 
+## 🚀 Contributions
 
+### PRs
+
+<div align="center">
+
+| PR Link   | Description  | Status | 
+| :-----------: | :------------------------------------:| :------:|
+| [PR #1](https://github.com/RocketChat/Apps.Github22/pull/1) | [New] GitHub App Setup. <br><br> <div align="left"> Highlights include:<ul><li>Slash Commands and interactive message to fetch repository data.</li><li>Fetching Pull Request Code Changes.</li><div> | <img src="https://i.imgur.com/tskv8MM.png" width=50 height=40> |
+
+</div>
+
+### Issues
+    
+
+<div align="center">
+    
+
+
+</div>
 
 
 
