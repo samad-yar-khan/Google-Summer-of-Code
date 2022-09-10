@@ -189,7 +189,12 @@ I have documented all of the features mentioned above in the [Project Wiki](http
 
 - Inorder to make this project a success we have pushed Rocket.Chat to the limit. To improve the collabortation and bring the GitHub conversations to Rocket.Chat we decided to add a Code Editor to component to Rocket.Chat. This task was not so easy, and required a lot of research. 
 - Adding any new Component to the UIKit and making it re-usable for other Rocket.Chat App developers requires us to go through a series of additions in different repositories and understanding how [fuselage](https://github.com/RocketChat/fuselage/tree/develop/packages/fuselage), [ui-kit](https://github.com/RocketChat/fuselage/tree/develop/packages/ui-kit), [fuselage-ui-kit](https://github.com/RocketChat/fuselage/tree/develop/packages/fuselage-ui-kit) and Rocket.Chat.Apps-engine work together to render components inside [Rocket.Chat](https://github.com/RocketChat/Rocket.Chat). 
-- The detailed documentation on how we went about adding a Code Editor to Rocket.Chqa
+- The detailed documentation on how we went about adding a Code Editor to Rocket.Chat can be seen over here : [Pull Request Reviews : Integrating Code Editor with Syntax Highlighting](https://github.com/RocketChat/Apps.Github22/wiki/Pull-Request-Reviews--:-Integrating-Code-Editor-with-Syntax-Highlighting).
+- To use the GitHub App the full potential, feel free to use the version of the GitHub App which uses the upgraded version of Rocket.Chat and other packages with the CodeEditor Component, update the dependencies to use modifies versions of the Rocket.Chat.Apps-engine, fuselgae, ui-kit and fuselage-ui-kit :
+            - [GitHub App with CodeEditor Component](https://github.com/samad-yar-khan/Apps.Github22/tree/demoApp).
+            - [fuselage, ui-kit and fuselage-ui-kit with Code Editor integration](https://github.com/samad-yar-khan/fuselage/tree/CodeEditorInputAce).
+            - [Rocket.Chat with intigrated Code Editor in the fuselage-ui-kit package](https://github.com/samad-yar-khan/Rocket.Chat/tree/CodeEditorComponent).
+- GitHub App with the the integrated CodeEditor can be used on this [hosted server](https://gh-app.rocketchat.digital/). This server uses the above mentioned, upgraded versions of fuselage, ui-kit, Rocket.Chat.Apps-engine and Rocket.Chat.
 
 
 ## 🎓 Mentors
