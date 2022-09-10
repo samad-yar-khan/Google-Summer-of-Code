@@ -15,9 +15,8 @@
         <a href="#-demo">Demo</a>&nbsp;&nbsp;&nbsp;
         <a href="#-contributions">Contributions</a>&nbsp;&nbsp;&nbsp;
         <a href="#documentation">Documentation</a>&nbsp;&nbsp;&nbsp;
-        <a href="#-links">Pushing Limits</a>
-        <a href="#-mentors">Mentors</a>&nbsp;&nbsp;&nbsp;
-        <a href="#-links">Links</a>
+        <a href="#-links">Pushing Limits</a>&nbsp;&nbsp;&nbsp;
+        <a href="#-mentors">Mentors</a>
     </code>
 </p>
 
