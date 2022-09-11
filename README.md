@@ -191,7 +191,7 @@ I have documented all of the features mentioned above in the [Project Wiki](http
 | Using WebHooks in Rocket.Chat Apps | [GitHub Event Subscriptions](https://github.com/RocketChat/Apps.Github22/wiki/GitHub-Event-Subscriptions) |
 | GitHub Search (Using Rocket.Chat.App-engine persistant storage) | [GitHub Search and Share](https://github.com/RocketChat/Apps.Github22/wiki/GitHub-Search) |
 | Opening New Issues (Fetching Issue Templates) | [Open New Issues from Rocket.Chat](https://github.com/RocketChat/Apps.Github22/wiki/Open-New-Issues-from-Rocket.Chat) |
-| Pull Request Reviews (Using APIs and Modal in Rocket.Chat Apps)| [Merge PRs and Add Comments](https://github.com/RocketChat/Apps.Github22/wiki/Merge-PRs-and-Add-Comments) |
+| Pull Request Reviews (Using APIs and Modal in Rocket.Chat Apps)| [Merge Pull Requests and Add Comments](https://github.com/RocketChat/Apps.Github22/wiki/Merge-PRs-and-Add-Comments) |
 | Assigning Issues (Using APIs, Modals and Persistent Storage in Rocket.Chat Apps) | [Assign and Sharing Issues from Rocket.Chat](https://github.com/RocketChat/Apps.Github22/wiki/Assigning-issues-from-Rocket.Chat) |
 
 </div>
