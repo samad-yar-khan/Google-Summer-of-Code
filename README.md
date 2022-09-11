@@ -174,7 +174,7 @@ https://user-images.githubusercontent.com/70485812/189453201-a886b5b5-84d9-4621-
    - [GitHub App with CodeEditor Component](https://github.com/samad-yar-khan/Apps.Github22/tree/demoApp).
    - [fuselage, ui-kit and fuselage-ui-kit with Code Editor integration](https://github.com/samad-yar-khan/fuselage/tree/CodeEditorInputAce).
    - [Rocket.Chat with intigrated Code Editor in the fuselage-ui-kit package](https://github.com/samad-yar-khan/Rocket.Chat/tree/CodeEditorComponent).
-            
+ 
 - GitHub App with the the integrated CodeEditor can be used on this [hosted server](https://gh-app.rocketchat.digital/). This server uses the above mentioned, upgraded versions of fuselage, ui-kit, Rocket.Chat.Apps-engine and Rocket.Chat.
 
 ## Documentation 
