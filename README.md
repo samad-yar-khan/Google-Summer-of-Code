@@ -200,9 +200,9 @@ I have documented all of the features mentioned above in the [Project Wiki](http
 
 A big big thank you to my mentors for their guidance before and throughout GSoC. 🙏
 
-Rohan Lekhwani has been an inspiration throught, his blogs and opensourced work has been a lifesaver at each step of GSoC. He has taught me how to own the project and juggle time between features to yeild the best output possible. 
+Rohan Lekhwani has been an inspiration throught, his blogs and opensourced work has been a lifesaver at each step of GSoC. I reached out to him over Linkedin last year and at the time I had no idea that he would end up being me mentor or that I would even be considered for GSoC'22. It would be accurate to say that I owe my GSoC'22 selection to him and his guidance. He has taught me how to own the project and juggle time between features to yeild the best output possible. 
 
-Sing Li has taught me the importance of thinking beyond what has been done and pushing the limits even if the task at hand seems impossible.
+Sing Li has taught me the importance of thinking beyond what has been done and pushing the limits even if the task at hand seems impossible. He has taught me the importance of communication and reaching out to people for guidance. His code reviews have made me a better developer and taught me how to think in terms of components and breaking down the large problem into smaller problems and solving one at a time. He motivated me to push myself and integrate the Code Editor inside Rocket.Chat, that became a highlighting feature for my project. This whole process was an enriching experience and can be considered a mini-GSoC Project of its own.
 
 My mentors taught me things which will stay with me for life and I am beyong grateful for their guidance. Both of them have taught me how to think about the end user and make the product as scable as possible. 
 
