@@ -66,7 +66,7 @@ The Minimal Slash commands allows users fetch repository details such as issues,
 
 https://user-images.githubusercontent.com/70485812/189435287-1ae93110-6ba2-4dbc-ab2f-4774a76cecfd.mp4
 
-### GitHub OAuth
+### 🔐 GitHub OAuth
 
 In the GitHub App I have implemented the Authnetication mechanism using OAuth2. Here we have used the [GitHub OAuth](https://docs.github.com/en/developers/apps/building-oauth-apps/authorizing-oauth-apps) along with the [RocketChat Apps Oauth2 Client](https://developer.rocket.chat/apps-engine/adding-features/oauth2-client).     
 - The users can login to their github accounts simply by entering the slash command : `/github login` and clicking on the `login` button.
@@ -75,7 +75,7 @@ In the GitHub App I have implemented the Authnetication mechanism using OAuth2. 
 
 https://user-images.githubusercontent.com/70485812/189439737-78e25abc-a78b-43da-af2f-21a6c061bc38.mp4
 
-### Event Subscriptions
+### 🖇️ Event Subscriptions
 
 The Event Subscriptions feature of the GitHub App allows users to subscribe to repository events such as - new pull request, new issues, new starts etc. Whenever a subscribed repository event takes place, the GitHub App bot will send a message on the subscribed room to describe the event.
 This feature uses [GitHub WebHooks](https://docs.github.com/en/developers/webhooks-and-events/webhooks/about-webhooks) and [regestering an API end point](https://developer.rocket.chat/apps-engine/sample-app-snippets/registering-api-endpoints) in the App.
@@ -86,7 +86,7 @@ This feature uses [GitHub WebHooks](https://docs.github.com/en/developers/webhoo
 
 https://user-images.githubusercontent.com/70485812/189442882-afc3950e-4581-4728-b8c3-0e77e40ee61f.mp4
 
-### GitHub Search & Share
+### 🔍 GitHub Search & Share
 
 This feature was initially supposed to be an extension of the Slash Commands but we decided to make it a completely interactive experience. 
 - The GitHub Search feature allows users to search github for issues and pull request using different filters such as labels, authors, state, milestones etc.
@@ -96,7 +96,7 @@ This feature was initially supposed to be an extension of the Slash Commands but
 
 https://user-images.githubusercontent.com/70485812/189448516-e846c836-551f-438e-960a-7c956d6b624f.mp4
 
-### Opening New Issues
+### 🚩 Opening New Issues
 
 The GitHub App allows users to open new issues from RocketChat. The `NewIssueModal` can be triggered by using `/github issue` and then entering the repository name in the launched modal.
 - This feature enables the users to fetch the issue templates for a repository from github, choose any of the given templates and open new issues with labels, assignees and rest of the properties. 
@@ -107,13 +107,13 @@ The GitHub App allows users to open new issues from RocketChat. The `NewIssueMod
 
 https://user-images.githubusercontent.com/70485812/189451845-34437a50-1fc8-4360-8b64-d1beac7af277.mp4
 
-### Assigning Issues
+### 🏦 Assigning Issues
 
 This features allows users to fetch repository issues and update the assignees on any issue. It also enables users to fetch and share multiple repository issues at a time. We can fetch and assign issues by using `/github issues` command and then entering the repository name.
 
 https://user-images.githubusercontent.com/70485812/189450860-5847e585-059c-4bed-a988-d21c99734969.mp4
 
-### Pull Request Reviews 
+### 📰 Pull Request Reviews 
 
 This feature allows users to review and merge pull requests inside RocketChat.
 
@@ -168,7 +168,7 @@ https://user-images.githubusercontent.com/70485812/189453201-a886b5b5-84d9-4621-
 ## Pushing Limits
 
 - Inorder to make this project a success we have pushed Rocket.Chat to the limit. To improve the collabortation and bring the GitHub conversations to Rocket.Chat we decided to add a Code Editor to component to Rocket.Chat. This task was not so easy, and required a lot of research. 
-- Adding any new Component to the UIKit and making it re-usable for other Rocket.Chat App developers requires us to go through a series of additions in different repositories and understanding how [fuselage](https://github.com/RocketChat/fuselage/tree/develop/packages/fuselage), [ui-kit](https://github.com/RocketChat/fuselage/tree/develop/packages/ui-kit), [fuselage-ui-kit](https://github.com/RocketChat/fuselage/tree/develop/packages/fuselage-ui-kit) and Rocket.Chat.Apps-engine work together to render components inside [Rocket.Chat](https://github.com/RocketChat/Rocket.Chat). 
+- Adding any new Component to the UIKit and making it re-usable for other Rocket.Chat App developers requires us to go through a series of additions in different repositories and understanding how [fuselage](https://github.com/RocketChat/fuselage/tree/develop/packages/fuselage), [ui-kit](https://github.com/RocketChat/fuselage/tree/develop/packages/ui-kit), [fuselage-ui-kit](https://github.com/RocketChat/fuselage/tree/develop/packages/fuselage-ui-kit) and [Rocket.Chat.Apps-engine](https://github.com/RocketChat/Rocket.Chat.Apps-engine) work together to render components inside [Rocket.Chat](https://github.com/RocketChat/Rocket.Chat). 
 - The detailed documentation on how we went about adding a Code Editor to Rocket.Chat can be seen over here : [Pull Request Reviews : Integrating Code Editor with Syntax Highlighting](https://github.com/RocketChat/Apps.Github22/wiki/Pull-Request-Reviews--:-Integrating-Code-Editor-with-Syntax-Highlighting).
 - To use the GitHub App the full potential, feel free to use the version of the GitHub App which uses the upgraded version of Rocket.Chat and other packages with the CodeEditor Component, update the dependencies to use modifies versions of the Rocket.Chat.Apps-engine, fuselgae, ui-kit and fuselage-ui-kit.
    - [GitHub App with CodeEditor Component](https://github.com/samad-yar-khan/Apps.Github22/tree/demoApp).
@@ -209,6 +209,12 @@ My mentors taught me things which will stay with me for life and I am beyong gra
 - **Rohan Lekhwani** - [GitHub](https://github.com/RonLek). [LinkedIn](https://www.linkedin.com/in/rohanlekhwani/)
 
 - **Sing Li** - [GitHub](https://github.com/Sing-Li). [LinkedIn](https://www.linkedin.com/in/sing-li-119716139/)
+
+Apart from my official Google Summer of Code Mentors, all Rocket.Chat community members have been extremely helful. 
+
+I would like to thank Debdut Chakraborty for his amazing guidance and for helping me since my early days at Rocket.Chat. He spent hours to help me host the Rocket.Chat server with the modified fuselage, ui-kit and Apps-engine and without him my Demo at the Rocket.Chat GSoC'22 Demo day would not have been possible ❤️. Checkout the hosted server [over here](https://gh-app.rocketchat.digital/home).Feel free to reach out to him and tell him he's awesome !
+
+- **Debdut Chakraborty** - [GitHub](https://github.com/debdutdeb). [LinkedIn](https://www.linkedin.com/in/debdut-chakraborty/)
 
 ## 💬 Connect With Me    
 
