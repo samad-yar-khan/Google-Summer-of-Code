@@ -20,7 +20,7 @@
     </code>
 </p>
 
-During Google Summer of Code 2022 I worked on the GitHub App for Rocket.Chat. This a GitHub itegration for RocketChat which enables developers to use various GitHub features inside RocketChat channels.
+During Google Summer of Code 2022 I worked on the GitHub App for Rocket.Chat. This a GitHub integration for RocketChat which enables developers to use various GitHub features inside RocketChat channels.
 
 I intend to maintain this repository as a final report summary of my GSoC work and a quick guide for all future GSoC aspirants.
 
